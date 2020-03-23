@@ -1,0 +1,108 @@
+body{
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Product Sans;
+    padding: 0px;
+    margin: 0px;
+}
+
+table{
+    width: 85%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th{
+    padding: 10px;
+    font-size: 2.5vw;
+    width: 50%;
+}
+
+td{
+    font-size: 1.5vw;
+}
+
+#caption{
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.title{
+    font-size: 2.3vw;
+}
+
+.ref{
+    text-align: start;
+    text-indent: 7.5%;
+    font-size: 1.5vw;
+}
+.det{
+    text-align: start;
+    text-indent: 8%;
+    font-size: 1.2vw;
+}
+.lastUpdate{
+    text-align: end;
+    padding-right: 7.5%;
+    font-size: 1.2vw;
+}
+
+.container{
+    /* width: 85%; */
+    margin-left: 15%;
+    margin-right: 15%;
+    /* height: 70%; */
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.bottom-info{
+    width: 100%;
+    padding-top: 2%;
+    
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0,0.8);
+    color: rgb(122, 122, 122);
+    font-size: 1.3vw;
+}
+
+.dash{
+    align-self: center;
+}
+
+#hospitals{
+    font-size: 1.5vw;
+    text-align: start;
+    text-indent: 7.5%;
+}
+
+.spmsg{
+    color: white;
+    font-size: 5vw;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes bounce {
+    0%   {font-size: 5vw;}
+    50% {font-size: 5.7vw;}
+    100% {font-size: 5vw;}
+  }
+
+.spdiv{
+    height: 13vw;
+    padding-top: 5vw;
+}
+
+#localNewCases,#globalNewCases,#localTotalCases,#globalTotalCases,#totalHospitalAdmits,#globalNewDeaths,#totalLocalDeaths,#totalGlobalDeaths,#totalLocalRecovered,#totalGlobalRecovered{
+    text-align: end;
+    padding-right: 4vw;
+}
