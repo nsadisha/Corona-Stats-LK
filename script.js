@@ -33,7 +33,7 @@ function fetchData(){
 
         document.getElementById("hospitals").innerHTML = "<h1 class=title><u>Hospitals</u></h1><hr width=85% color=grey>";
         for(i=0;i<length;i++){
-            document.getElementById("hospitals").innerHTML += "<p class=hoss>"+(i+1)+") "+hospitals[i]+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp->&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(Local - "+localTreatments[i]+" and Foreign - "+foreignTreatments[i]+")</p>";
+            document.getElementById("hospitals").innerHTML += "<p class='hoss'>"+(i+1)+") "+hospitals[i]+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp->&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(Local - "+localTreatments[i]+" and Foreign - "+foreignTreatments[i]+")</p>";
         }
 
     }).catch(function(error){
