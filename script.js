@@ -31,10 +31,10 @@ function fetchData(){
             foreignTreatments[i] = data.data.hospital_data[i].treatment_foreign;
         }
 
-        document.getElementById("hospitals").innerHTML = "<h1 class=title><u>Hospitals</u></h1><hr width=85% color=grey>";
+        document.getElementById("hospitals").innerHTML = "";
         // document.getElementById("hospitals").classList.add("title");
         for(i=0;i<length;i++){
-            document.getElementById("hospitals").innerHTML += "<p class=hoss>"+(i+1)+") "+hospitals[i]+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp->&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(Local - "+localTreatments[i]+" and Foreign - "+foreignTreatments[i]+")</p>";
+            document.getElementById("hospitals").innerHTML += "<tr><td class=hoss>"+(i+1)+") "+hospitals[i]+"</td><td>->&nbsp&nbsp&nbsp(Local - "+localTreatments[i]+" and Foreign - "+foreignTreatments[i]+")</td></tr>";
             
         }
         // document.getElementById("hosss").classList.add("hoss");
