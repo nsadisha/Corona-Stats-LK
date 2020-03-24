@@ -49,7 +49,7 @@ async function refresh(){
     while(true){
         fetchData();
         console.log("updated");
-        await sleep(36000);
+        await sleep(1000*12*3600);
     }
 }
 
