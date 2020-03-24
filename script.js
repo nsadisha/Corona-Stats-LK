@@ -34,7 +34,7 @@ function fetchData(){
         document.getElementById("hospitals").innerHTML = "";
         // document.getElementById("hospitals").classList.add("title");
         for(i=0;i<length;i++){
-            document.getElementById("hospitals").innerHTML += "<tr><td class=hoss>"+(i+1)+") "+hospitals[i]+"</td><td>->&nbsp&nbsp&nbsp(Local - "+localTreatments[i]+" and Foreign - "+foreignTreatments[i]+")</td></tr>";
+            document.getElementById("hospitals").innerHTML += "<tr><td>"+(i+1)+") "+hospitals[i]+"</td><td>->&nbsp&nbsp&nbsp(Local - "+localTreatments[i]+" and Foreign - "+foreignTreatments[i]+")</td></tr>";
             
         }
         // document.getElementById("hosss").classList.add("hoss");
