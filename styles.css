@@ -1,9 +1,14 @@
+@font-face{
+    font-family: ProductSans;
+    src: url("font/ProductSans.ttf");
+}
+
 body{
     background-image: url("img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: Product Sans;
+    font-family: ProductSans;
     padding: 0px;
     margin: 0px;
 }
