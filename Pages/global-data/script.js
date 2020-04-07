@@ -2,7 +2,7 @@
 var table = document.getElementById("country-data");
 //global data fetch
 fetch('https://nepalcorona.info/api/v1/data/world').then(function(response){
-return response.json();
+    return response.json();
 }).then(function(obj){
     var txtData = JSON.stringify(obj)
     data = JSON.parse(txtData);
