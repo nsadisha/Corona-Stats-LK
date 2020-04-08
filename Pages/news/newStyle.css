@@ -1,0 +1,61 @@
+@font-face{
+    font-family: ProductSans;
+    src: url("/font/ProductSans.ttf");
+}
+
+body{
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ProductSans;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h2{padding-left: 2.5vw;font-size: 2.5vw;}
+p{font-size: 1.3vw; padding-left: 2.5vw;}
+
+img{
+    width: 50%;
+    border: 1px;
+    border-color: white;
+    padding-left:3vw;
+}
+
+a{color: white;}
+
+#news{
+    width: 100%;
+    display: inline-table;
+}
+
+.main-cap{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+
+
+
+@media only screen and (max-width:768px){
+
+    .main-cap{
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 8vh;
+        margin-bottom: 3vh;
+    }
+
+    img{
+        width: 95%;
+        margin-bottom: 5px;
+    }
+    h2{padding-left: 2.5vw;font-size: 4.5vw;}
+    p{font-size: 3vw; padding-left: 2.5vw;}
+
+}
