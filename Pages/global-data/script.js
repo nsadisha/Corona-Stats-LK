@@ -1,4 +1,3 @@
-
 var table = document.getElementById("country-data");
 //global data fetch
 fetch('https://nepalcorona.info/api/v1/data/world').then(function(response){
@@ -26,6 +25,6 @@ fetch('https://nepalcorona.info/api/v1/data/world').then(function(response){
 
 
 }).catch(function(error){
-    //alert("Something went wrong!\nTry refreshing your browser.");
+    alert("Something went wrong!\nTry refreshing your browser.");
     console.error(error);
 });
