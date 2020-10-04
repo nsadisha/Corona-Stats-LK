@@ -1,0 +1,88 @@
+@font-face{
+    font-family: ProductSans;
+    src: url(/font/ProductSans.ttf);
+}
+
+body{
+    padding: 0px;
+    padding-bottom: 50px;
+    margin: 0px;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ProductSans;
+    color: white;
+}
+
+.main-cap{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.msgs{
+    width: 30%;
+    transition: 0.1s;
+}
+.msgs:hover{width:30.2%}
+
+.container1{
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.5vw;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+.container2{
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.5vw;
+    
+}
+.title{
+    font-size: 3vw;
+    text-indent: 5%;
+    text-decoration: underline;
+    margin-top: 5vh;
+}
+.title1{
+    font-size: 2vw;
+    text-indent: 5%;
+    text-decoration: underline;
+    margin-top: 5vh;
+    padding-left: 7%;
+}
+
+
+@media only screen and (max-width:768px){
+    .msgs{
+        width: 95%;
+        margin-bottom: 10px;
+        transition: 0.1s;
+    }
+    .msgs:hover{
+        width: 96%;
+    }
+
+    .title{
+        font-size: 4.5vw;
+        text-indent: 5%;
+    }
+
+    .main-cap{
+        font-size: 6vw;
+        text-align: center;
+        margin-top: 8vh;
+        margin-bottom: 3vh;
+    }
+}
