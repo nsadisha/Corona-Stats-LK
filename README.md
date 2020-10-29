@@ -1,12 +1,16 @@
-# Go-Green: Share your plantings
+# Corona-Stats-LK: See information about COVID-19
 
 [![Vue version](https://img.shields.io/badge/Vue-v2-brightgreen)]()
 [![Vue version](https://img.shields.io/badge/Licence-MIT-orange)]()
 
 
 ## About
-This is a platform to share your plantings across the world.
-Still under development.
+A web page that shows information about Covid patients in Sri Lanka and all around the world.<br>
+Not only that,
+
+- but also WHO messages
+- News
+- FAQs
 
 
 # Setup
