@@ -6,6 +6,7 @@ import ProtectYourself from './screens/ProtectYourself.vue';
 import News from './screens/News.vue';
 import FAQs from './screens/FAQs.vue';
 import GlobalData from './screens/GlobalData.vue';
+import ErrorPage from './screens/ErrorPage.vue';
 
 Vue.use(Router);
 
@@ -36,11 +37,11 @@ let router = new Router({
         name: 'GlobalData',
         component: GlobalData,
       },
-      // {
-      //   path: '*',
-      //   name: 'ErrorPage',
-      //   component: ErrorPage
-      // }
+      {
+        path: '*',
+        name: 'ErrorPage',
+        component: ErrorPage
+      }
     ]
   });
 
