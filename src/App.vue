@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="bg"></div>
+    <Header/>
     <router-view></router-view>
     <Footer msg="Made with ♥️ by Sadisha Nimsara"/>
   </div>
