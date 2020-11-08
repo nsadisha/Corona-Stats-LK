@@ -2,7 +2,7 @@
 
 [![Vue version](https://img.shields.io/badge/Vue-v2-brightgreen)]()
 [![Vue version](https://img.shields.io/badge/Licence-MIT-orange)]()
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/914bd385-c23d-4e7d-807a-a41ff5e2bb5c/deploy-status)](https://app.netlify.com/sites/corona-stats-lk/deploys)
 
 ## About
 A web page that shows information about Covid patients in Sri Lanka and all around the world.<br>
