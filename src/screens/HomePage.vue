@@ -138,7 +138,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
@@ -161,7 +161,7 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="container">
             <div class="spdiv">
@@ -259,7 +259,7 @@ th{
     font-size: 2rem;
 }
 td{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .spacer{height: 0;}
 .d-title{
