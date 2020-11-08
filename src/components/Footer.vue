@@ -1,12 +1,22 @@
 <template>
-  <footer>
+  <footer class="pt-5 pb-3">
     <p>{{ msg }}</p>
+    <h5>Contribute for Corona Stats LK</h5>
+      <div>
+        <github-button class="mx-2" ass href="https://github.com/nsadisha" data-size="large" aria-label="Follow @nsadisha on GitHub">Follow @nsadisha</github-button>
+        <github-button class="mx-2" ass href="https://github.com/nsadisha/corona-stats-lk" data-size="large" data-show-count="true" aria-label="Star nsadisha/corona-stats-lk on GitHub">Star</github-button>
+        <github-button class="mx-2" ass href="https://github.com/nsadisha/corona-stats-lk/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork nsadisha/corona-stats-lk on GitHub">Fork</github-button>
+      </div>
   </footer>
 </template>
 
 <script>
+import GithubButton from 'vue-github-button'
 export default {
   name: 'Footer',
+  components:{
+    GithubButton
+  },
   props: {
     msg: String
   }
@@ -16,20 +26,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 footer{
-  height: 10rem;
   background-color: rgba(0, 0, 0, 0.8);
   display: grid;
+  color: rgb(194, 194, 194);
 }
 p{
   font-size: 1.4rem;
-  color: rgb(194, 194, 194);
   align-self: center;
 }
 
 @media only screen and (max-width:550px){
-  footer{
-    height: 8rem;
-  }
   p{
     font-size: 1.2rem;
   }
