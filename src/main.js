@@ -4,9 +4,11 @@ import router from './router';
 
 //Import global components
 import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
 
 //Register components
 Vue.component('Footer',Footer)
+Vue.component('Header',Header)
 
 Vue.config.productionTip = false;
 
