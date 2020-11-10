@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light opacity backdrop">
         <button class="navbar-toggler" id="toggle-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -7,19 +7,19 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav ml-auto mt-2 text-left">
-                <li class="nav-item"  @click="activeNav('home')" v-bind:class="{ 'active': currentNav=='home' }">
+                <li class="nav-item"  @click="activeNav()" v-bind:class="{ 'active': currentNav=='HomePage' }">
                     <router-link to="/" class="nav-link">Home</router-link>
                 </li>
-                <li class="nav-item" @click="activeNav('protect-yourself')" v-bind:class="{ 'active': currentNav=='protect-yourself' }">
+                <li class="nav-item" @click="activeNav()" v-bind:class="{ 'active': currentNav=='ProtectYourself' }">
                     <router-link to="/protect-yourself" class="nav-link">Protect Yourself</router-link>
                 </li>
-                <li class="nav-item" @click="activeNav('news')" v-bind:class="{ 'active': currentNav=='news' }">
+                <li class="nav-item" @click="activeNav()" v-bind:class="{ 'active': currentNav=='News' }">
                     <router-link to="/news" class="nav-link">News</router-link>
                 </li>
-                <li class="nav-item" @click="activeNav('global')" v-bind:class="{ 'active': currentNav=='global' }">
+                <li class="nav-item" @click="activeNav()" v-bind:class="{ 'active': currentNav=='GlobalData' }">
                     <router-link to="/global" class="nav-link">Global Stats</router-link>
                 </li>
-                <li class="nav-item" @click="activeNav('faqs')" v-bind:class="{ 'active': currentNav=='faqs' }">
+                <li class="nav-item" @click="activeNav()" v-bind:class="{ 'active': currentNav=='FAQs' }">
                     <router-link to="/faqs" class="nav-link">FAQs</router-link>
                 </li>
             </ul>
@@ -32,12 +32,15 @@ export default {
     name: 'Header',
     data(){
         return{
-            currentNav: 'home'
+            currentNav: ''
         }
     },
+    mounted(){
+        this.currentNav = this.$route.name
+    },
     methods: {
-        activeNav(tab){
-            this.currentNav = tab;
+        activeNav(){
+            this.currentNav = this.$route.name;
             document.getElementById('toggle-btn').click();
         }
     }
@@ -53,5 +56,11 @@ export default {
     }
     .nav-link{
         font-size: 1.2rem;
+    }
+    .opacity{
+        opacity: 0.95;
+    }
+    .backdrop{
+        backdrop-filter: blur(13px);
     }
 </style>

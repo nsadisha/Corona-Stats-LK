@@ -74,7 +74,8 @@ export default {
         border-radius: 7px;
         padding: 1rem;
         margin-bottom: 1rem;
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(13px);
         overflow-x: scroll;
         font-size: 1.2rem;
 }

@@ -234,7 +234,8 @@ export default {
 
 /* Page css */
 .box {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(13px);
   border-radius: 15px;
   padding-top: 4rem;
   padding-bottom: 3.5rem;
