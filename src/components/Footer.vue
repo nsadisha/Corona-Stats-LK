@@ -6,7 +6,7 @@
         <github-button class="mx-2" ass href="https://github.com/nsadisha" data-size="large" aria-label="Follow @nsadisha on GitHub">Follow @nsadisha</github-button>
       </div>
     <h5 class="mt-2">Contribute for Corona Stats LK</h5>
-      <div>
+      <div class="mb-2">
         <github-button class="mx-2" ass href="https://github.com/nsadisha/corona-stats-lk" data-size="large" data-show-count="true" aria-label="Star nsadisha/corona-stats-lk on GitHub">Star</github-button>
         <github-button class="mx-2" ass href="https://github.com/nsadisha/corona-stats-lk/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork nsadisha/corona-stats-lk on GitHub">Fork</github-button>
       </div>

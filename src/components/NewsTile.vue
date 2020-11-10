@@ -30,7 +30,7 @@ export default {
         border-radius: 7px;
         padding: 1rem;
         margin-bottom: 1rem;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(13px);
     }
     h3{
