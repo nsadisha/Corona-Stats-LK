@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light opacity backdrop">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light opacity">
         <button class="navbar-toggler" id="toggle-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,9 +58,6 @@ export default {
         font-size: 1.2rem;
     }
     .opacity{
-        opacity: 0.95;
-    }
-    .backdrop{
-        backdrop-filter: blur(13px);
+        opacity: 0.97;
     }
 </style>

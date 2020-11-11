@@ -30,7 +30,7 @@ export default {
 <style scoped>
 footer{
   background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(13px);
+  /*backdrop-filter: blur(13px);*/
   display: grid;
   color: rgb(194, 194, 194);
 }

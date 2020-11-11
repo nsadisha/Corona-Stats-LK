@@ -28,7 +28,7 @@ export default {
         padding: 1rem;
         margin-bottom: 1rem;
         background-color: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(13px);
+        /*backdrop-filter: blur(13px);*/
     }
     h3{
         margin-top: 3rem;
