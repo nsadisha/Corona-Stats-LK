@@ -1,0 +1,27 @@
+/* import helper */
+@import url('helper.css');
+
+.banner-section{
+    position: relative;
+}
+.banner-section .banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('../assets/img/vaccination-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.banner-section .overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.banner-section .banner-title{
+    font-size: 4rem;
+}
