@@ -25,3 +25,30 @@
 .banner-section .banner-title{
     font-size: 4rem;
 }
+
+/* vaccine type card */
+
+.vaccine-type-card{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.13);
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.vaccine-type-card .type{
+    background-color: var(--bg);
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+.vaccine-type-card .more-link{
+    color: #797979;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.vaccine-type-card .more-link:hover{
+    color: black;
+}
