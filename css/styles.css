@@ -60,9 +60,10 @@
     background-color: white;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.13);
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 .stat-tile .stat-title{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 0;
     color: #555;
     font-weight: 300;
