@@ -76,19 +76,19 @@
             <div class="col-11 col-sm-8 col-md-6 col-lg-3">
                 <div class="stat-tile py-3">
                     <p class="stat-title">Total Cases</p>
-                    <p class="stat-data" style="--color: #aaa;"><strong id="total-cases-lk">0</strong></p>
+                    <p class="stat-data" style="--color: #6b85de;"><strong id="total-cases-lk">0</strong></p>
                 </div>
             </div>
             <div class="col-11 col-sm-8 col-md-6 col-lg-3">
                 <div class="stat-tile py-3">
                     <p class="stat-title">Active Cases</p>
-                    <p class="stat-data" style="--color: #696969;"><strong id="total-active-lk">0</strong></p>
+                    <p class="stat-data" style="--color: #f98847;"><strong id="total-active-lk">0</strong></p>
                 </div>
             </div>
             <div class="col-11 col-sm-8 col-md-6 col-lg-3">
                 <div class="stat-tile py-3">
                     <p class="stat-title">Deaths</p>
-                    <p class="stat-data" style="--color: #696969;"><strong id="total-deaths-lk">0</strong></p>
+                    <p class="stat-data" style="--color: #ff8484;"><strong id="total-deaths-lk">0</strong></p>
                 </div>
             </div>
             <div class="col-11 col-sm-8 col-md-6 col-lg-3">
@@ -100,16 +100,20 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-lg-12 mb-3">
-                <canvas id="total-cases-chart" height="100px"></canvas>
+            <div class="col-lg-12 mb-4">
+                <canvas id="total-cases-chart" height="450px"></canvas>
             </div>
-            <div class="col-lg-6 mb-3">
+            <div class="col-lg-6 mb-4">
                 <canvas id="total-deaths-chart" height="200px"></canvas>
             </div>
-            <div class="col-lg-6 mb-3">
+            <div class="col-lg-6 mb-4">
                 <canvas id="total-recovered-chart" height="200px"></canvas>
             </div>
+            <div class="col-lg-5 mb-4">
+                <canvas id="summary-chart" height="150px"></canvas>
+            </div>
         </div>
+        <p class="text-secondary text-center mb-0">Source: <a href="https://www.worldometers.info/coronavirus/country/sri-lanka" target="_blank">Worldometers</a> | <a href="https://hpb.health.gov.lk/covid19-dashboard/" target="_blank">HPB</a></p>
     </section>
     <!-- stats section ends -->
 

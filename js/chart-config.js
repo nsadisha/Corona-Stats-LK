@@ -15,19 +15,25 @@ function initTotalCassesChart(data){
             datasets: [{
                 label: 'Total cases',
                 data: chartData,
-                backgroundColor: '#696969',
-                borderColor: '#696969',
-                borderWidth: 1,
+                backgroundColor: '#6b85de',
+                borderColor: '#6b85de',
+                borderWidth: 2,
                 pointRadius: 1,
-                stepped: true,
+                pointHitRadius: 500,
+                pointStyle: 'line',
                 tension: 0.3
             }]
         },
         options: {
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true
                 }
+            },
+            interaction: {
+                // mode: 'nearest',
+                axis: 'x'
             },
             plugins: {
                 title: {
@@ -60,11 +66,12 @@ function initTotalDeathsChart(data){
             datasets: [{
                 label: 'Deaths',
                 data: chartData,
-                backgroundColor: 'red',
-                borderColor: 'red',
+                backgroundColor: '#ff8484',
+                borderColor: '#ff8484',
                 borderWidth: 1,
                 pointRadius: 1,
-                stepped: true,
+                pointHitRadius: 20,
+                pointStyle: 'line',
                 tension: 0.3
             }]
         },
@@ -109,7 +116,8 @@ function initTotalRecoveriessChart(data){
                 borderColor: '#8ACA2B',
                 borderWidth: 1,
                 pointRadius: 1,
-                stepped: true,
+                pointHitRadius: 20,
+                pointStyle: 'line',
                 tension: 0.3
             }]
         },
@@ -123,6 +131,41 @@ function initTotalRecoveriessChart(data){
                 title: {
                     display: true,
                     text: 'Total Recoveries',
+                    font: {
+                        size: 20
+                    }
+                }
+            }
+        }
+    });
+}
+
+function initSummaryChart(active, deaths, recovered){
+    const ctx = document.getElementById('summary-chart');
+    const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                'Active',
+                'Deaths',
+                'Recovered'
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [active, deaths, recovered],
+                backgroundColor: [
+                  '#f98847',
+                  '#ff8484',
+                  '#8ACA2B'
+                ],
+                hoverOffset: 5
+              }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Summary',
                     font: {
                         size: 20
                     }

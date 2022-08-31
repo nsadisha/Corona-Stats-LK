@@ -34,8 +34,8 @@ window.onload = (e) => {
     fetch('https://hpb.health.gov.lk/api/get-statistical-history-data').then(obj => {
         return obj.json()
     }).then(data => {
+        //init charts
         const dataSet = getLatestData(data.data, data.data.length)
-        console.log(dataSet);
         initTotalCassesChart(dataSet)
         initTotalDeathsChart(dataSet)
         initTotalRecoveriessChart(dataSet)
@@ -50,6 +50,9 @@ window.onload = (e) => {
         setInnerHTML('total-active-lk', nf.format(data.active))
         setInnerHTML('total-deaths-lk', nf.format(data.deaths))
         setInnerHTML('total-recovered-lk', nf.format(data.recovered))
+
+        //init summary chart
+        initSummaryChart(data.active, data.deaths, data.recovered)
     })
 
 }
