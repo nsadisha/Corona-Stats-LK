@@ -108,3 +108,10 @@
     font-size: 1.1rem;
     background-color: rgba(255, 255, 255, 0.15) !important;
 }
+
+/* footer */
+
+footer{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
