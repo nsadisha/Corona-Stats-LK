@@ -52,3 +52,23 @@
 .vaccine-type-card .more-link:hover{
     color: black;
 }
+
+/* stat tile */
+
+.stat-tile{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.13);
+    margin-bottom: 1.5rem;
+}
+.stat-tile .stat-title{
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #555;
+    font-weight: 300;
+}
+.stat-tile .stat-data{
+    margin-bottom: 0;
+    font-size: 2.6rem;
+    color: var(--color);
+}

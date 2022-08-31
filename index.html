@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="virus.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corona Stats LK</title>
 
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- js -->
     <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/charts.min.js" defer></script>
+    <script src="js/chart-config.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 
@@ -69,6 +72,44 @@
     <section class="container pt-5" id="stats">
         <h1 class="text-center mt-3">Statistics</h1>
         <hr width="120px" class="mx-auto">
+        <div class="row justify-content-center mt-5 text-center">
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Total Cases</p>
+                    <p class="stat-data" style="--color: #aaa;"><strong id="total-cases-lk">0</strong></p>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Active Cases</p>
+                    <p class="stat-data" style="--color: #696969;"><strong id="total-active-lk">0</strong></p>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Deaths</p>
+                    <p class="stat-data" style="--color: #696969;"><strong id="total-deaths-lk">0</strong></p>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Recovered</p>
+                    <p class="stat-data" style="--color: #8ACA2B;"><strong id="total-recovered-lk">0</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12 mb-3">
+                <canvas id="total-cases-chart" height="100px"></canvas>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <canvas id="total-deaths-chart" height="200px"></canvas>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <canvas id="total-recovered-chart" height="200px"></canvas>
+            </div>
+        </div>
     </section>
     <!-- stats section ends -->
 
