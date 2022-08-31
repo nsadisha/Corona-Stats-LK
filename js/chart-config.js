@@ -53,7 +53,7 @@ function initTotalDeathsChart(data){
     let chartData = []
 
     data.forEach(item => {
-        console.log(item);
+        // console.log(item);
         chartLabels.push(item.date)
         chartData.push(item.deaths_count)
     })
@@ -99,7 +99,7 @@ function initTotalRecoveriessChart(data){
     let chartData = []
 
     data.forEach(item => {
-        console.log(item);
+        // console.log(item);
         chartLabels.push(item.date)
         chartData.push(item.recoveries_count)
     })
