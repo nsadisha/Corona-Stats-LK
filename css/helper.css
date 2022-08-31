@@ -1,0 +1,41 @@
+.navbar{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transition: 0.3s;
+}
+.navbar .navbar-brand{
+    font-size: 2rem;
+    transition: 0.3s;
+    color: white;
+}
+.navbar .nav-link{
+    color: rgb(187, 187, 187);
+    transition: 0.2s;
+}
+.navbar .nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+.navbar-scroll{
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.navbar.navbar-scroll .navbar-brand{
+    font-size: large;
+    color: unset;
+}
+.navbar.navbar-scroll .nav-link{
+    color: rgb(99, 99, 99);
+    transition: 0.2s;
+}
+.navbar.navbar-scroll .nav-link:hover{
+    color: rgb(0, 0, 0);
+}
+
+.full-h{
+    height: 100vh !important;
+}
+.full-w{
+    width: 100vw !important;
+}

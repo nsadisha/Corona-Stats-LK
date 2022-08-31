@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="virus.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Stats LK</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- js -->
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/charts.min.js" defer></script>
+    <script src="js/chart-config.js" defer></script>
+    <script src="js/faq-list.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand h1 p-0 m-0" href="/">Corons Stats LK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#top"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#stats"><strong>Statistics</strong></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#types"><strong>Types</strong></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#faq"><strong>FAQ</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- banner section starts -->
+    <section class="container-fluid full-h banner-section p-0" id="top">
+        <div class="banner"></div>
+        <div class="overlay d-grid align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-white text-center text-lg-start p-5 p-lg-0">
+                        <h1 class="mb-3 banner-title">Get Vaccinated!</h1>
+                        <p>Getting a COVID-19 vaccine is a safer, more reliable way to build protection than getting
+                            sick with COVID-19. COVID-19 vaccination helps protect you by creating an antibody response
+                            without you having to experience potentially severe illness or post-COVID conditions.</p>
+                        <a href="#stats"><button class="btn btn-info px-3 mt-3">See Stats</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
+    <!-- stats section starts -->
+    <section class="container pt-5" id="stats">
+        <h1 class="text-center mt-3">Statistics</h1>
+        <hr width="120px" class="mx-auto">
+        <div class="row justify-content-center mt-5 text-center">
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Total Cases</p>
+                    <p class="stat-data" style="--color: #6b85de;"><strong id="total-cases-lk">0</strong></p>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Active Cases</p>
+                    <p class="stat-data" style="--color: #f98847;"><strong id="total-active-lk">0</strong></p>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Deaths</p>
+                    <p class="stat-data" style="--color: #ff8484;"><strong id="total-deaths-lk">0</strong></p>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-3">
+                <div class="stat-tile py-3">
+                    <p class="stat-title">Recovered</p>
+                    <p class="stat-data" style="--color: #8ACA2B;"><strong id="total-recovered-lk">0</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12 mb-4">
+                <canvas id="total-cases-chart" height="450px"></canvas>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <canvas id="total-deaths-chart" height="200px"></canvas>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <canvas id="total-recovered-chart" height="200px"></canvas>
+            </div>
+            <div class="col-lg-5 mb-4">
+                <canvas id="summary-chart" height="150px"></canvas>
+            </div>
+        </div>
+        <p class="text-secondary text-center mb-0">Source: <a
+                href="https://www.worldometers.info/coronavirus/country/sri-lanka" target="_blank">Worldometers</a> | <a
+                href="https://hpb.health.gov.lk/covid19-dashboard/" target="_blank">HPB</a></p>
+    </section>
+    <!-- stats section ends -->
+
+    <!-- types section starts -->
+    <section class="container pt-5" id="types">
+        <h1 class="text-center mt-3">Approved vaccines in Sri Lanka</h1>
+        <hr width="120px" class="mx-auto">
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #ff9547;">RNA</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Moderna</h4>
+                        <h3><strong>Spikevax</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 88 countries</p>
+                        <p class="mb-4"><strong>68 trials</strong> in 24 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/22/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #ff9547;">RNA</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Pfizer/BioNTech</h4>
+                        <h3><strong>Comirnaty</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 149 countries</p>
+                        <p class="mb-4"><strong>90 trials</strong> in 29 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/6/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #b57cc8;">Inactivated</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Sinopharm (Beijing)</h4>
+                        <h3><strong>Covilo</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 93 countries</p>
+                        <p class="mb-4"><strong>38 trials</strong> in 16 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/5/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #b57cc8;">Inactivated</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Sinovac</h4>
+                        <h3><strong>CoronaVac</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 56 countries</p>
+                        <p class="mb-4"><strong>40 trials</strong> in 10 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/7/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #e375b6;">Non Replicating Viral Vector</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Gamaleya</h4>
+                        <h3><strong>Sputnik V</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 74 countries</p>
+                        <p class="mb-4"><strong>25 trials</strong> in 08 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/12/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #e375b6;">Non Replicating Viral Vector</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Oxford/AstraZeneca</h4>
+                        <h3><strong>Vaxzevria</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 149 countries</p>
+                        <p class="mb-4"><strong>70 trials</strong> in 33 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/4/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+                <div class="vaccine-type-card">
+                    <div class="type" style="--bg: #e375b6;">Non Replicating Viral Vector</div>
+                    <div class="my-4">
+                        <h4 class="mb-0">Serum Institute of India</h4>
+                        <h3><strong>Covishield (Oxford/ AstraZeneca formulation)</strong></h3>
+                        <p class="mb-2 mt-4"><strong>Approved</strong> in 49 countries</p>
+                        <p class="mb-4"><strong>04 trials</strong> in 01 countries</p>
+                        <a href="https://covid19.trackvaccines.org/vaccines/48/" class="more-link" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p class="text-secondary text-center pb-0">Source: <a href="https://covid19.trackvaccines.org/country/sri-lanka"
+                target="_blank">https://covid19.trackvaccines.org</a></p>
+    </section>
+    <!-- types section ends -->
+
+    <!-- faq section starts -->
+    <section class="container pt-5" id="faq">
+        <h1 class="text-center mt-3">Frequently Asked Questions</h1>
+        <hr width="120px" class="mx-auto">
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-7">
+                <div class="accordion" id="accordian-div">
+                    
+                    <!-- items will be dynamically injected -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- faq section ends -->
+
+    <!-- footer starts -->
+    <footer class="container bg-dark text-center py-5 mt-5">
+        <p class="text-white m-0">Designed & Developed with ♥️ by <a href="http://github.com/nsadisha">nsadisha</a></p>
+    </footer>
+    <!-- footer ends -->
+
+</body>
+
+</html>

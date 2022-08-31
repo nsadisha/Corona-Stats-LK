@@ -1,0 +1,117 @@
+/* import helper */
+@import url('helper.css');
+
+.banner-section{
+    position: relative;
+}
+.banner-section .banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('../assets/img/vaccination-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.banner-section .overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.banner-section .banner-title{
+    font-size: 4rem;
+}
+
+/* vaccine type card */
+
+.vaccine-type-card{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.13);
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.vaccine-type-card .type{
+    background-color: var(--bg);
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+.vaccine-type-card .more-link{
+    color: #797979;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.vaccine-type-card .more-link:hover{
+    color: black;
+}
+
+/* stat tile */
+
+.stat-tile{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.13);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+.stat-tile .stat-title{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    color: #555;
+    font-weight: 300;
+}
+.stat-tile .stat-data{
+    margin-bottom: 0;
+    font-size: 2.6rem;
+    color: var(--color);
+}
+
+/* accordioin */
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='gray'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='gray'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    --bs-accordion-border-width: 0;
+}
+
+.accordion-item {
+    background-color: transparent !important;
+    border-radius: 5px !important;
+    border: solid 1px #ddd !important;
+    margin-bottom: 5px;
+}
+
+.accordion-item .accordion-header .accordion-button {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.accordion-item .accordion-header .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-item .accordion-header .accordion-button {
+    font-size: 1.3rem;
+    color: #212529;
+}
+
+.accordion-item .accordion-body {
+    color: #797687;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* footer */
+
+footer{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
