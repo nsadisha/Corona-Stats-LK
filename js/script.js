@@ -71,3 +71,28 @@ function getLatestData(data, count){
 
     return lastMonth.reverse()
 }
+
+// accordians
+const accordianDiv = document.getElementById('accordian-div')
+
+faqList.forEach(faq => {
+    accordianDiv.innerHTML += createAccordianItem(faq)
+})
+
+function createAccordianItem(item){
+    return `
+    <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq-item-${item.id}">
+                ${item.title}
+            </button>
+        </h2>
+        <div id="faq-item-${item.id}" class="accordion-collapse collapse ${item.id == 1 ? "show": "collapsed"}"
+            data-bs-parent="#accordian-div">
+            <div class="accordion-body">
+                ${item.description}
+            </div>
+        </div>
+    </div>`
+}

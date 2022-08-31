@@ -15,6 +15,7 @@
     <script src="js/bootstrap.min.js" defer></script>
     <script src="js/charts.min.js" defer></script>
     <script src="js/chart-config.js" defer></script>
+    <script src="js/faq-list.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 
@@ -40,7 +41,7 @@
                         <a class="nav-link" href="#types"><strong>Types</strong></a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link"><strong>Products</strong></a>
+                        <a class="nav-link" href="#faq"><strong>FAQ</strong></a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link"><strong>Contact Us</strong></a>
@@ -59,7 +60,9 @@
                 <div class="row">
                     <div class="col-lg-6 text-white text-center text-lg-start p-5 p-lg-0">
                         <h1 class="mb-3 banner-title">Get Vaccinated!</h1>
-                        <p>Getting a COVID-19 vaccine is a safer, more reliable way to build protection than getting sick with COVID-19. COVID-19 vaccination helps protect you by creating an antibody response without you having to experience potentially severe illness or post-COVID conditions.</p>
+                        <p>Getting a COVID-19 vaccine is a safer, more reliable way to build protection than getting
+                            sick with COVID-19. COVID-19 vaccination helps protect you by creating an antibody response
+                            without you having to experience potentially severe illness or post-COVID conditions.</p>
                         <a href="#stats"><button class="btn btn-info px-3 mt-3">See Stats</button></a>
                     </div>
                 </div>
@@ -113,7 +116,9 @@
                 <canvas id="summary-chart" height="150px"></canvas>
             </div>
         </div>
-        <p class="text-secondary text-center mb-0">Source: <a href="https://www.worldometers.info/coronavirus/country/sri-lanka" target="_blank">Worldometers</a> | <a href="https://hpb.health.gov.lk/covid19-dashboard/" target="_blank">HPB</a></p>
+        <p class="text-secondary text-center mb-0">Source: <a
+                href="https://www.worldometers.info/coronavirus/country/sri-lanka" target="_blank">Worldometers</a> | <a
+                href="https://hpb.health.gov.lk/covid19-dashboard/" target="_blank">HPB</a></p>
     </section>
     <!-- stats section ends -->
 
@@ -209,9 +214,28 @@
             </div>
 
         </div>
-        <p class="text-secondary text-center">Source: <a href="https://covid19.trackvaccines.org/country/sri-lanka" target="_blank">https://covid19.trackvaccines.org</a></p>
+        <p class="text-secondary text-center pb-0">Source: <a href="https://covid19.trackvaccines.org/country/sri-lanka"
+                target="_blank">https://covid19.trackvaccines.org</a></p>
     </section>
     <!-- types section ends -->
+
+    <!-- faq section starts -->
+    <section class="container pt-5" id="faq">
+        <h1 class="text-center mt-3">Frequently Asked Questions</h1>
+        <hr width="120px" class="mx-auto">
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-7">
+                <div class="accordion" id="accordian-div">
+                    
+                    <!-- items will be dynamically injected -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- faq section ends -->
 
 </body>
 
